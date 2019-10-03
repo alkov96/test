@@ -19,7 +19,7 @@
 
     * (проверяет, что пользователь залогиген под своей учёткой) "@alkov96"
 
-    * запрос к API "user/repos?access_token=08eeeeb7a05bd00a22f89f8c8ad91d0e2a5073cc" и сохраняем в "RESPONCE_API":
+    * запрос к API "user/repos?access_token=f005d349a6fa1ec7d4149693b57bd19f80c2c48e" и сохраняем в "RESPONCE_API":
       | name        | NAME                          |
       | description | This is your first repository |
       | homepage    | https://github.com            |
