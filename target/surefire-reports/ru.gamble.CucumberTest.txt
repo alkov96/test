@@ -1,0 +1,154 @@
+-------------------------------------------------------------------------------
+Test set: ru.gamble.CucumberTest
+-------------------------------------------------------------------------------
+Tests run: 51, Failures: 5, Errors: 3, Skipped: 0, Time elapsed: 7,866.781 s <<< FAILURE! - in ru.gamble.CucumberTest
+Изменение условий в купоне.(3_Ставки)  Time elapsed: 97.757 s  <<< FAILURE!
+ru.sbtqa.tag.qautils.errors.AutotestError: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+Caused by: ru.sbtqa.tag.pagefactory.exceptions.FactoryRuntimeException: Error while executing action 'добавляет несколько событий в купон' on DayEventsPage . See the caused exception below
+Caused by: org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 7 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+
+Мультимонитор. Проверка что в купоне будет видео для игр с видео. и схема - если игра без видео(5_Лайв, Прематч и динамическое меню)  Time elapsed: 161.747 s  <<< FAILURE!
+ru.sbtqa.tag.qautils.errors.AutotestError
+Caused by: ru.sbtqa.tag.pagefactory.exceptions.FactoryRuntimeException: Error while executing action 'добавляет на монитор игру' on MultimonitorPage . See the caused exception below
+Caused by: java.lang.NullPointerException
+
+Проверка работы раздела "Нулевая маржа". Проверка того, что значки соответвтуют играм и ставка на событие из нулевой маржи.(5_Лайв, Прематч и динамическое меню)  Time elapsed: 4.592 s  <<< FAILURE!
+ru.sbtqa.tag.qautils.errors.AutotestError: Ошибка! По WSS получили[{}]
+
+Главная страница. Проверка пролистывания баннеров на главном слайдере.(4_Главная страница)  Time elapsed: 23.309 s  <<< FAILURE!
+ru.sbtqa.tag.qautils.errors.AutotestError: Ошибка! Что-то не так в запросе, проверьте руками [SELECT delay FROM gamebet.`bannerslider` WHERE NAME='slider_desktop_index_main_default']
+
+Проверка смены EMAIL через EMAIL(изменение базовых параметров через личный кабинет)  Time elapsed: 256.533 s  <<< ERROR!
+ru.sbtqa.tag.pagefactory.exceptions.PageInitializationException: Failed to initialize page 'class ru.gamble.pages.userProfilePages.ProfilePage'
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.TimeoutException: 
+Timed out after 10 seconds waiting for visibility of Tab Wraper
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='user-profile__tab-wraper']"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+*** Element info: {Using=xpath, value=//div[@class='user-profile__tab-wraper']}
+
+Проверка смены EMAIL через PHONE(изменение базовых параметров через личный кабинет)  Time elapsed: 253.26 s  <<< ERROR!
+ru.sbtqa.tag.pagefactory.exceptions.PageInitializationException: Failed to initialize page 'class ru.gamble.pages.userProfilePages.ProfilePage'
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.TimeoutException: 
+Timed out after 10 seconds waiting for visibility of Tab Wraper
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='user-profile__tab-wraper']"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.01 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+*** Element info: {Using=xpath, value=//div[@class='user-profile__tab-wraper']}
+
+Проверка смены PHONE через EMAIL(изменение базовых параметров через личный кабинет)  Time elapsed: 253.719 s  <<< ERROR!
+ru.sbtqa.tag.pagefactory.exceptions.PageInitializationException: Failed to initialize page 'class ru.gamble.pages.userProfilePages.ProfilePage'
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.TimeoutException: 
+Timed out after 10 seconds waiting for visibility of Tab Wraper
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='user-profile__tab-wraper']"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+*** Element info: {Using=xpath, value=//div[@class='user-profile__tab-wraper']}
+
+Проверка смены PHONE через PHONE(изменение базовых параметров через личный кабинет)  Time elapsed: 236.033 s  <<< FAILURE!
+ru.sbtqa.tag.qautils.errors.AutotestError: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@class,'bw-pane__text_timer')]"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+*** Element info: {Using=xpath, value=//span[contains(@class,'bw-pane__text_timer')]}
+Caused by: ru.sbtqa.tag.pagefactory.exceptions.FactoryRuntimeException: Error while executing action 'ждет пока не закончится таймер и кнопка 'попробовать снова' станет активной' on BasicWizard . See the caused exception below
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(@class,'bw-pane__text_timer')]"}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'ZAVALIY-T', ip: '192.168.100.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63336}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a), userDataDir=C:\Users\T6C14~1.ZAV\AppData\Local\Temp\scoped_dir33168_30229}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 391bd018e8782a8d83cf75470e0f222c
+*** Element info: {Using=xpath, value=//span[contains(@class,'bw-pane__text_timer')]}
+

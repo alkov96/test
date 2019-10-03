@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.sbtqa.tag:qa-utils:1.4.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/qa-utils/1.4.0/qa-utils-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/qa-utils/1.4.0/qa-utils-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/sbtqa/tag/qa-utils/1.4.0/qa-utils-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
